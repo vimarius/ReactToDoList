@@ -29,7 +29,7 @@ function TodoList() {
 
     };
 
-    
+
 
     const completeTodo = id => {
         let updatedTodos = todos.map(todo => {
@@ -43,9 +43,9 @@ function TodoList() {
 
     return (
         <div>
-            <h1>My Todo List for the Day</h1>
+            <h1>My Todo List </h1>
             <TodoForm onSubmit={addTodo} />
-            <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo}/>
+            <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
         </div>
     )
 }
